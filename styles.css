@@ -1,0 +1,457 @@
+:root{--bg:#070505;--panel:#100a09;--panel2:#160d0b;--pink:#e61f58;--pink2:#ff4d85;--gold:#d59d37;--cream:#f8ded0;--text:#fff8f4;--muted:#bcaeaa;--line:rgba(213,157,55,.35)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 0,#2a130f 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}button,a{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}a{text-decoration:none}.topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:8px 4vw;background:rgba(7,5,5,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-align:left}.brand img{width:58px;height:58px;object-fit:contain}.brand span{font-size:.74rem;color:var(--cream)}nav{display:flex;gap:18px}nav a{color:var(--muted);font-size:.9rem}.nav-active{color:var(--pink2)!important}.top-actions{display:flex;align-items:center;gap:8px}.account-btn{border:1px solid #ffffff1e;padding:9px 12px;border-radius:10px;font-size:.8rem;color:var(--cream)}.cart-top{border:1px solid var(--gold);padding:9px 12px;border-radius:12px}.cart-top b{background:var(--pink);padding:2px 7px;border-radius:20px;margin-left:4px}.app-card,.merch-card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(26,15,12,.95),rgba(9,7,7,.98));box-shadow:0 20px 60px rgba(0,0,0,.35)}main{max-width:1440px;margin:auto;padding:28px 4vw 60px}.primary{display:inline-block;text-align:center;background:linear-gradient(135deg,var(--pink),#b60d3c);padding:14px 24px;border-radius:12px;font-weight:800;box-shadow:0 10px 25px rgba(230,31,88,.25);border:0}.ghost{display:inline-block;border:1px solid var(--gold);padding:13px 20px;border-radius:12px;color:var(--gold)}.full{width:100%}.eyebrow{letter-spacing:.16em;color:var(--pink2);font-size:.75rem;font-weight:800}.hero{min-height:520px;padding:55px;display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;inset:auto -10% -50% 35%;height:500px;background:radial-gradient(circle,var(--pink) 0,transparent 60%);opacity:.16}.hero-copy{position:relative;z-index:2;align-self:center}.hero h1,.merch-hero h1{font-size:clamp(2.5rem,6vw,5.4rem);line-height:.98;margin:12px 0}.hero em,.merch-hero em{color:var(--gold);font-style:normal}.hero p,.merch-hero p{color:var(--muted);max-width:550px}.hero-actions{display:flex;gap:12px;margin-top:28px}.hero-art{position:relative;min-height:400px;z-index:2}.hero-logo{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 20px 30px rgba(0,0,0,.6))}.fruit{position:absolute;display:block;width:42px;height:42px;filter:drop-shadow(0 8px 8px #0008)}.strawberry{background:radial-gradient(circle at 35% 28%,#ffb5c3 0 5%,#e71942 10% 60%,#9d001e 100%);border-radius:55% 55% 62% 62%;clip-path:polygon(50% 0,90% 20%,100% 58%,50% 100%,0 58%,10% 20%)}.lime{background:radial-gradient(circle,#f4ffc4 0 16%,#d2f176 18% 45%,#7c9f24 48% 70%,#4f6f15 73%);border-radius:50%;border:3px solid #9fc74b}.passion{background:radial-gradient(circle at 50% 50%,#fff6c8 0 25%,#e8b627 27% 42%,#8b2671 44% 100%);border-radius:50%}.chocolate{background:linear-gradient(135deg,#4c2111,#9b4e25 45%,#2a1009);border-radius:8px;transform:rotate(20deg)}.nut{background:radial-gradient(circle at 35% 30%,#d8a766,#8e4d20 55%,#4b230f);border-radius:55% 45% 60% 40%}.fruit-orbit .fruit:nth-child(1){left:6%;top:16%;animation:float 4s ease-in-out infinite}.fruit-orbit .fruit:nth-child(2){right:9%;top:22%;animation:float 5s 1s ease-in-out infinite}.fruit-orbit .fruit:nth-child(3){left:22%;bottom:13%;animation:float 4.5s 2s ease-in-out infinite}.fruit-orbit .fruit:nth-child(4){right:22%;bottom:18%;animation:float 5s .5s ease-in-out infinite}.fruit-orbit .fruit:nth-child(5){left:46%;top:8%;animation:float 4s 1.5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+.experience-grid{display:grid;grid-template-columns:1.25fr .9fr .85fr;gap:18px;margin-top:20px}.experience-grid>article{padding:22px}.section-title{display:flex;gap:12px;align-items:center}.section-title>span{color:var(--gold);font-size:1.8rem;font-weight:900}.section-title h2{font-size:1rem;margin:0;color:var(--cream)}.section-title p{font-size:.8rem;color:var(--muted);margin:4px 0}.fridge-wrap{position:relative}.fridge-handle{position:absolute;z-index:6;right:18px;top:12px;background:#0b0808e8;border:1px solid var(--gold);color:var(--gold);padding:8px 10px;border-radius:9px;font-size:.7rem;font-weight:800}.fridge{margin:18px auto 8px;width:min(100%,480px);height:470px;border-radius:12px 12px 20px 20px;background:linear-gradient(90deg,#24282a,#62686a 8%,#1c2022 11%,#101416 88%,#4c5254);padding:34px 32px 24px;box-shadow:inset 0 0 20px #000,0 20px 30px #000;position:relative;perspective:1000px;overflow:hidden}.fridge-top{position:absolute;left:32px;right:32px;top:34px;height:28px;border-radius:10px;background:linear-gradient(#b7b9b8,#45494a)}.fridge-inner{height:100%;padding-top:36px}.shelves{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;height:100%;align-content:space-around;position:relative;z-index:1}.fridge-door{position:absolute;z-index:4;inset:25px 22px 20px 22px;border:4px solid #777;border-radius:8px;background:linear-gradient(115deg,rgba(225,244,247,.22),rgba(7,15,18,.38));box-shadow:inset 0 0 20px #000,0 5px 18px #0008;transform-origin:left center;transition:transform .9s cubic-bezier(.2,.8,.2,1);backface-visibility:hidden}.fridge.open .fridge-door{transform:rotateY(-102deg)}.door-glass{position:absolute;inset:0;background:linear-gradient(115deg,transparent 25%,rgba(255,255,255,.14) 28%,transparent 34%)}.door-handle{position:absolute;right:8px;top:38%;width:7px;height:95px;border-radius:8px;background:linear-gradient(#ddd,#555)}.fridge-light{position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,rgba(214,247,255,.34),transparent 65%);opacity:.25;transition:.6s}.fridge.open .fridge-light{opacity:1}.can{position:relative;cursor:grab;min-width:0;display:flex;align-items:center;justify-content:center;border-radius:10px;transition:.25s}.can:hover{transform:translateY(-6px) scale(1.04);filter:brightness(1.1)}.can img{width:100%;max-height:112px;object-fit:contain;filter:drop-shadow(0 5px 6px rgba(0,0,0,.65))}.can .price{position:absolute;bottom:0;right:0;font-size:.62rem;background:#050505cc;border:1px solid var(--gold);border-radius:7px;padding:2px 5px}.hint,.payment-note{color:var(--muted);font-size:.76rem;text-align:center}.bag-zone{height:440px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:18px;background:radial-gradient(circle,rgba(230,31,88,.12),transparent 62%)}.bag-zone.dragover{outline:2px dashed var(--pink);background:rgba(230,31,88,.12)}.bag-wrap{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center}.bag-wrap.open{animation:bagOpen .55s ease}.bag-wrap img#bagImage{max-width:115%;max-height:108%;object-fit:contain;filter:drop-shadow(0 18px 20px #0008)}.bag-can{position:absolute;width:35%;height:52%;object-fit:contain;left:50%;top:54%;transform:translate(-50%,-50%) scale(.2);opacity:0;z-index:3;transition:.7s cubic-bezier(.2,.9,.2,1);filter:drop-shadow(0 10px 8px #0008)}.bag-wrap.open .bag-can{transform:translate(-50%,-50%) scale(1);opacity:1}.hidden{display:none!important}.drop-label{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);background:#080606d9;border:1px solid var(--gold);padding:8px 12px;border-radius:999px;color:var(--cream);font-size:.72rem;text-align:center;z-index:5;white-space:nowrap}@keyframes bagOpen{50%{transform:scale(1.035)}}.bag-shadow{position:absolute;width:65%;height:16%;bottom:18px;background:radial-gradient(ellipse,#000a,transparent 70%)}.mini-cart{min-height:260px;margin:14px 0}.mini-cart.empty{display:grid;place-items:center;color:var(--muted);text-align:center}.mini-item{display:grid;grid-template-columns:62px 1fr auto;gap:8px;align-items:center;border-bottom:1px solid #ffffff12;padding:8px 0}.mini-item img{width:60px;height:70px;object-fit:contain}.mini-item small{color:var(--muted)}.section-block{padding-top:68px}.center-title{text-align:center}.center-title p{color:var(--pink2);margin:0;font-weight:900}.center-title h2{font-size:clamp(2rem,4vw,4rem);margin:4px 0;color:var(--cream)}.center-title span{color:var(--muted);font-size:.9rem}.product-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-top:28px}.product-card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(#160d0c,#080707);text-align:center;padding:12px;min-height:360px;display:flex;flex-direction:column}.product-card img{width:100%;height:245px;object-fit:contain;filter:drop-shadow(0 10px 12px #0008)}.product-card h3{margin:6px 0 0;font-size:.9rem}.product-card p{color:var(--cream);margin:5px 0 12px}.product-card button{margin-top:auto;border:1px solid var(--pink);padding:9px;border-radius:9px;color:var(--pink2);font-size:.7rem}.music-section{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:30px;margin-top:68px}.music-cover{min-height:340px;border-radius:20px;background:radial-gradient(circle at 50% 45%,#2b0c20,#090707 62%);border:1px solid #ffffff15;display:grid;place-items:center;text-align:center}.cover-neon{font-size:clamp(3rem,8vw,7rem);font-weight:300;letter-spacing:.08em;color:#ff5791;text-shadow:0 0 20px #e61f58}.cover-neon small{display:block;font-size:.15em;letter-spacing:.3em;margin-top:10px;color:var(--cream)}.wave{color:var(--pink2);letter-spacing:.3em}.player-info{align-self:center}.player-info h2{font-size:2.4rem;margin:5px 0}.player-info h3{color:var(--gold);font-weight:500}.progress-row{display:grid;grid-template-columns:42px 1fr 42px;gap:10px;align-items:center;font-size:.8rem;color:var(--muted)}input[type=range]{accent-color:var(--pink)}.controls{display:flex;justify-content:center;gap:25px;margin-top:25px}.controls button{font-size:1.3rem}.controls .play{width:56px;height:56px;border-radius:50%;background:var(--pink)}.temporary{font-size:.75rem;color:var(--muted);margin-top:22px}.merch-banner{margin-top:68px;padding:35px;display:grid;grid-template-columns:1fr 1fr;align-items:center;overflow:hidden}.merch-banner h2{font-size:clamp(2rem,4vw,4rem);margin:8px 0}.merch-banner p{color:var(--muted);max-width:600px}.merch-mini{height:310px;position:relative}.merch-mini img{position:absolute;width:42%;height:100%;object-fit:contain}.merch-mini img:nth-child(1){left:0}.merch-mini img:nth-child(2){left:30%}.merch-mini img:nth-child(3){right:0}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:65px}.support-card,.benefits{padding:24px}.bot,.user{padding:12px 15px;border-radius:14px;max-width:80%;font-size:.9rem;margin:8px 0}.bot{background:#1d1b1b}.user{background:var(--pink);margin-left:auto}#chat{min-height:220px;max-height:300px;overflow:auto;padding:5px}#chatForm{display:flex;gap:8px;border-top:1px solid #ffffff18;padding-top:12px}#chatInput{flex:1;background:#090909;border:1px solid #ffffff20;border-radius:10px;color:white;padding:12px}#chatForm button{background:var(--gold);color:#130b08;border-radius:10px;padding:0 16px}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:12px}.benefits div{border:1px solid #ffffff15;border-radius:14px;padding:18px;display:grid;gap:6px}.benefits b{color:var(--gold)}.benefits span{color:var(--muted);font-size:.8rem}.cart-drawer{position:fixed;right:-430px;top:0;width:min(420px,100vw);height:100dvh;background:#0d0909;z-index:60;padding:22px;transition:.35s;border-left:1px solid var(--line);box-shadow:-20px 0 50px #000}.cart-drawer.open{right:0}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff15}.drawer-head h2{margin:0 0 12px}.drawer-head button,.modal-close{font-size:2rem}.cart-line{display:grid;grid-template-columns:72px 1fr auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid #ffffff12}.cart-line img{width:65px;height:80px;object-fit:contain}.qty{display:flex;gap:7px;align-items:center}.qty button{border:1px solid #ffffff28;border-radius:6px;padding:2px 8px}.remove{color:var(--pink2)}.drawer-total{display:flex;justify-content:space-between;padding:18px 0;font-size:1.2rem}.overlay{position:fixed;inset:0;background:#0009;z-index:55;opacity:0;pointer-events:none;transition:.3s}.overlay.show{opacity:1;pointer-events:auto}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,30px);background:var(--gold);color:#1a0c08;padding:12px 18px;border-radius:12px;font-weight:800;opacity:0;z-index:90;transition:.3s}.toast.show{opacity:1;transform:translate(-50%,0)}footer{border-top:1px solid var(--line);padding:35px 4vw;text-align:center;color:var(--muted)}footer img{width:90px;height:90px;object-fit:contain}footer b{color:var(--pink2)}
+.intro{position:fixed;inset:0;z-index:200;background:radial-gradient(circle at center,#28100e 0,#070505 56%);display:grid;place-items:center;overflow:hidden;transition:opacity .7s,visibility .7s}.intro.hide{opacity:0;visibility:hidden}.intro-center{text-align:center;position:relative;z-index:2}.intro-logo{width:min(420px,72vw);height:auto;filter:drop-shadow(0 20px 30px #000)}.intro-center p{color:var(--cream);letter-spacing:.15em;font-size:.75rem}.intro-enter{margin-top:18px}.intro-fruits .fruit{animation:introFall 5s linear infinite}.intro-fruits .a{left:6%;top:-12%;animation-delay:0s}.intro-fruits .b{left:20%;top:-18%;animation-delay:1.2s}.intro-fruits .c{left:39%;top:-10%;animation-delay:.5s}.intro-fruits .d{left:58%;top:-16%;animation-delay:2s}.intro-fruits .e{left:76%;top:-14%;animation-delay:1.7s}.intro-fruits .f{left:90%;top:-12%;animation-delay:.8s}.intro-fruits .g{left:48%;top:-20%;animation-delay:2.6s}@keyframes introFall{0%{transform:translateY(-10vh) rotate(0)}100%{transform:translateY(125vh) rotate(720deg)}}
+.account-modal{position:fixed;inset:0;z-index:80;background:#000b;display:none;place-items:center;padding:18px}.account-modal.show{display:grid}.account-card{width:min(420px,100%);background:linear-gradient(#160d0d,#090707);border:1px solid var(--gold);border-radius:24px;padding:24px;position:relative;box-shadow:0 30px 80px #000}.account-card>img{display:block;width:100px;height:100px;object-fit:contain;margin:0 auto}.modal-close{position:absolute;right:16px;top:10px}.account-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #ffffff18;margin:8px 0 16px}.account-tabs button{padding:12px;color:var(--muted)}.account-tabs button.active{color:var(--pink2);border-bottom:2px solid var(--pink)}#accountForm{display:grid;gap:10px}#accountForm input{background:#090909;border:1px solid #ffffff20;border-radius:10px;color:white;padding:13px}.forgot{text-align:center;color:var(--pink2);font-size:.78rem}.account-status{text-align:center;color:var(--cream);font-size:.85rem}.hidden{display:none!important}
+.merch-page main{max-width:1300px}.merch-hero{min-height:460px;display:grid;grid-template-columns:1fr 1fr;align-items:center;border-bottom:1px solid var(--line);padding:30px 0}.merch-hero-bag{height:420px}.merch-hero-bag img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 25px 25px #000)}.merch-only-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:35px}.merch-card{padding:18px;text-align:center}.merch-card img{width:100%;height:420px;object-fit:contain}.merch-card h3{color:var(--gold);margin:8px 0}.merch-card p{color:var(--muted);font-size:.85rem;min-height:20px}
+@media(max-width:1050px){.experience-grid{grid-template-columns:1fr 1fr}.cart-preview{grid-column:span 2}.product-grid{grid-template-columns:repeat(4,1fr)}}@media(max-width:760px){.topbar{padding:5px 12px}.brand img{width:52px;height:52px}.brand span,nav,.account-btn{display:none}main{padding:14px}.hero{grid-template-columns:1fr;padding:28px 20px;min-height:auto}.hero-art{min-height:220px}.hero-logo{max-height:250px}.experience-grid{grid-template-columns:1fr}.cart-preview{grid-column:auto}.fridge{height:440px;padding:34px 20px 20px}.fridge-door{inset:25px 12px 18px}.fridge-top{left:20px;right:20px}.bag-zone{height:420px}.product-grid{grid-template-columns:repeat(2,1fr);gap:10px}.product-card{min-height:280px}.product-card img{height:180px}.music-section,.support-grid{grid-template-columns:1fr;padding:18px}.music-cover{min-height:270px}.merch-banner{grid-template-columns:1fr;padding:22px}.merch-mini{height:240px}.benefits{grid-template-columns:1fr 1fr}.hero-actions{flex-direction:column}.primary,.ghost{width:100%}.section-block{padding-top:48px}.drop-label{font-size:.62rem;max-width:92%;white-space:normal}.fridge-handle{right:8px;top:10px}.merch-hero{grid-template-columns:1fr;padding-top:10px}.merch-hero-bag{height:300px}.merch-only-grid{grid-template-columns:1fr}.merch-card img{height:330px}.intro-logo{width:min(360px,82vw)}}
+
+/* ===== CORRECCIÓN: IMÁGENES ORIGINALES TRANSPARENTES, FRUTA REAL, REFRI Y BOLSA ===== */
+img{background:transparent!important}
+.real-fruits,.real-fruit-orbit{position:absolute;inset:0;pointer-events:none}
+.real-fruit{position:absolute;display:block;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(0,0,0,.6));animation:realFruitFall linear infinite;will-change:transform}
+.real-fruits .a{width:92px;left:4%;top:-16%;animation-duration:7.8s;animation-delay:-1.2s}
+.real-fruits .b{width:72px;left:18%;top:-12%;animation-duration:9.2s;animation-delay:-5s}
+.real-fruits .c{width:86px;left:36%;top:-20%;animation-duration:8.6s;animation-delay:-2.6s}
+.real-fruits .d{width:58px;left:54%;top:-15%;animation-duration:7.4s;animation-delay:-4.4s}
+.real-fruits .e{width:84px;left:71%;top:-18%;animation-duration:8.9s;animation-delay:-6.2s}
+.real-fruits .f{width:74px;left:86%;top:-14%;animation-duration:9.6s;animation-delay:-3.1s}
+.real-fruits .g{width:70px;left:48%;top:-10%;animation-duration:8.1s;animation-delay:-7.1s}
+@keyframes realFruitFall{0%{transform:translate3d(0,-20vh,0) rotate(0deg);opacity:0}8%{opacity:1}92%{opacity:1}100%{transform:translate3d(var(--drift,25px),125vh,0) rotate(560deg);opacity:0}}
+.real-fruits .a{--drift:80px}.real-fruits .b{--drift:-65px}.real-fruits .c{--drift:45px}.real-fruits .d{--drift:-85px}.real-fruits .e{--drift:70px}.real-fruits .f{--drift:-50px}.real-fruits .g{--drift:95px}
+.real-fruit-orbit img{position:absolute;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(0,0,0,.65));animation:floatReal 5s ease-in-out infinite}
+.real-fruit-orbit img:nth-child(1){width:90px;left:2%;top:9%;animation-delay:-1s}.real-fruit-orbit img:nth-child(2){width:70px;right:4%;top:14%;animation-delay:-2s}.real-fruit-orbit img:nth-child(3){width:82px;left:18%;bottom:8%;animation-delay:-3s}.real-fruit-orbit img:nth-child(4){width:60px;right:18%;bottom:15%;animation-delay:-.4s}.real-fruit-orbit img:nth-child(5){width:76px;left:46%;top:1%;animation-delay:-2.4s}
+@keyframes floatReal{50%{transform:translateY(-20px) rotate(8deg)}}
+
+/* Refrigerador: puerta completa de cristal, visible y realmente interactiva */
+.fridge-wrap{min-height:510px}.fridge{overflow:visible;background:linear-gradient(90deg,#111719,#596165 7%,#202628 12%,#101416 87%,#434a4d);box-shadow:inset 0 0 28px #000,0 25px 45px #000}
+.fridge-inner{position:relative;z-index:2;background:linear-gradient(180deg,rgba(210,230,235,.13),rgba(0,0,0,.12));border-radius:6px}
+.fridge-door{appearance:none;padding:0;cursor:pointer;z-index:10;inset:18px 14px 16px 14px!important;transform-origin:left center!important;transform-style:preserve-3d;background:rgba(180,215,225,.14)!important;border:5px solid #8a9295!important;box-shadow:inset 0 0 0 2px #15191b,inset 0 0 26px rgba(0,0,0,.65),0 10px 22px rgba(0,0,0,.7)!important;transition:transform 1s cubic-bezier(.18,.82,.2,1),filter .5s!important}
+.fridge-door:hover{filter:brightness(1.12)}.fridge.open .fridge-door{transform:rotateY(-108deg) translateZ(4px)!important}
+.door-glass{background:linear-gradient(112deg,rgba(220,245,255,.18),rgba(20,35,40,.30) 44%,rgba(255,255,255,.07) 45%,rgba(15,25,30,.38))!important}
+.door-reflection{position:absolute;inset:8px;background:linear-gradient(112deg,transparent 28%,rgba(255,255,255,.34) 34%,transparent 40%);pointer-events:none}
+.door-handle{right:11px!important;top:25%!important;height:52%!important;width:11px!important;background:linear-gradient(90deg,#2b3133,#e0e4e5 45%,#575e61)!important;box-shadow:0 0 10px #000!important}
+.fridge.open .fridge-door .door-glass{opacity:.9}.fridge-handle{z-index:15!important}
+.fridge-card .hint{font-weight:700;color:var(--pink2)}
+
+/* Bolsa original: apertura visual y entrada de la lata */
+.bag-zone{background:radial-gradient(circle at 50% 55%,rgba(230,31,88,.22),transparent 58%),#090606}.bag-wrap{transform-origin:center bottom}.bag-wrap.open{animation:bagBreath .75s cubic-bezier(.18,.9,.2,1)}
+.bag-wrap img#bagImage{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 22px 24px rgba(0,0,0,.85))}
+.bag-wrap.open #bagImage{animation:bagMouth .72s ease-in-out}.bag-can{z-index:6;width:29%;height:48%;top:39%;filter:drop-shadow(0 12px 10px rgba(0,0,0,.7));transition:transform .9s cubic-bezier(.18,.9,.22,1),opacity .35s}
+.bag-wrap.open .bag-can{transform:translate(-50%,-45%) scale(1.05);opacity:1}.bag-wrap.receiving .bag-can{animation:canDrop .95s cubic-bezier(.15,.9,.2,1) forwards}
+@keyframes bagBreath{0%,100%{transform:scale(1)}35%{transform:scale(1.08,1.01)}70%{transform:scale(.98,1.04)}}@keyframes bagMouth{0%,100%{filter:brightness(1)}40%{filter:brightness(1.35)}}@keyframes canDrop{0%{transform:translate(-50%,-120%) scale(.7);opacity:1}70%{transform:translate(-50%,-30%) scale(1);opacity:1}100%{transform:translate(-50%,18%) scale(.58);opacity:0}}
+
+/* No mostrar cuadros blancos aunque alguna imagen tenga píxeles claros internos */
+.product-card img,.can img,.mini-item img,.cart-line img,.merch-card img,.merch-mini img,.brand img,.intro-logo,.hero-logo,.account-card img,.merch-hero-bag img{background:transparent!important}
+.merch-card img{object-fit:contain;isolation:isolate}
+@media(max-width:760px){.real-fruits .a{width:72px}.real-fruits .b{width:58px}.real-fruits .c{width:68px}.real-fruits .d{width:44px}.real-fruits .e{width:66px}.real-fruits .f{width:58px}.real-fruits .g{width:55px}.fridge-wrap{min-height:480px}.fridge{height:440px}.fridge-door{inset:18px 10px 14px!important}.bag-zone{height:430px}}
+
+/* ===== AJUSTE FINAL: BIENVENIDA, VOLUMEN Y BOLSA ORIGINAL ===== */
+.intro-welcome{margin:0 0 8px!important;color:var(--gold)!important;font-weight:900!important;letter-spacing:.32em!important;font-size:clamp(.72rem,1.2vw,.95rem)!important;text-shadow:0 0 18px rgba(255,190,76,.28)}
+.intro-message{margin:0 0 10px;font-size:clamp(2rem,5vw,4.7rem);line-height:.92;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:500;color:var(--cream);text-shadow:0 12px 30px #000}
+.intro-message em{color:var(--pink2);font-weight:500}
+.volume-row{display:grid;grid-template-columns:42px 1fr 44px;gap:10px;align-items:center;margin:20px auto 0;max-width:420px;color:var(--muted);font-size:.76rem}
+.volume-row .mute{width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:#100b0b;color:var(--cream);font-size:1rem;box-shadow:inset 0 0 14px #000}
+.volume-row input{width:100%;accent-color:var(--pink)}
+#volumeValue{text-align:right;color:var(--cream);font-variant-numeric:tabular-nums}
+
+/* La bolsa usa exactamente la imagen original proporcionada. Solo se añade profundidad, luz y sombra, sin cambiar su diseño. */
+.bag-zone{isolation:isolate;background:radial-gradient(ellipse at 50% 58%,rgba(230,31,88,.28),rgba(34,9,13,.2) 38%,#060505 74%)}
+.bag-zone::before{content:"";position:absolute;width:72%;height:14%;bottom:8%;left:14%;border-radius:50%;background:radial-gradient(ellipse,rgba(0,0,0,.92),rgba(0,0,0,.45) 42%,transparent 72%);filter:blur(10px);transform:perspective(400px) rotateX(58deg);z-index:0}
+.bag-zone::after{content:"";position:absolute;inset:9% 10% 12%;border-radius:46%;background:radial-gradient(ellipse at 50% 20%,rgba(255,255,255,.10),transparent 30%),radial-gradient(ellipse at 50% 85%,rgba(255,95,145,.11),transparent 54%);pointer-events:none;z-index:1}
+.bag-wrap{z-index:2;filter:drop-shadow(0 32px 26px rgba(0,0,0,.58));transition:transform .5s ease}
+.bag-wrap::before{content:"";position:absolute;width:70%;height:18%;left:15%;bottom:10%;background:radial-gradient(ellipse,rgba(255,255,255,.12),transparent 68%);filter:blur(20px);opacity:.7;pointer-events:none;z-index:1}
+.bag-wrap img#bagImage{position:relative;z-index:2;width:auto;max-width:118%;max-height:112%;object-fit:contain;filter:drop-shadow(0 8px 2px rgba(255,255,255,.08)) drop-shadow(0 25px 28px rgba(0,0,0,.88));transform:perspective(900px) rotateX(1.2deg);transition:transform .55s cubic-bezier(.18,.9,.2,1),filter .55s}
+.bag-wrap:hover img#bagImage{transform:perspective(900px) rotateX(0deg) translateY(-5px) scale(1.018);filter:drop-shadow(0 10px 3px rgba(255,255,255,.1)) drop-shadow(0 32px 34px rgba(0,0,0,.9))}
+.bag-wrap.open img#bagImage{transform:perspective(900px) rotateX(-1.5deg) scale(1.045)}
+.bag-wrap.receiving img#bagImage{animation:bagRealisticReceive .95s cubic-bezier(.15,.9,.2,1)}
+@keyframes bagRealisticReceive{0%{transform:perspective(900px) rotateX(0) scale(1)}35%{transform:perspective(900px) rotateX(-3deg) scale(1.055,1.02)}72%{transform:perspective(900px) rotateX(1deg) scale(.99,1.025)}100%{transform:perspective(900px) rotateX(0) scale(1)}}
+.bag-can{z-index:7!important}
+.drop-label{z-index:9!important;box-shadow:0 8px 20px #0008}
+@media(max-width:760px){.intro-message{font-size:clamp(2rem,10vw,3.2rem)}.volume-row{max-width:100%;margin-top:16px}.bag-wrap img#bagImage{max-width:120%;max-height:115%}}
+
+
+/* ===== INTRO: EL USUARIO DEBE PULSAR PARA ENTRAR ===== */
+.intro{pointer-events:auto!important}
+.intro-center{pointer-events:auto!important;z-index:20!important}
+.intro-enter{position:relative!important;z-index:30!important;display:inline-flex!important;align-items:center;justify-content:center;gap:12px;min-width:250px;min-height:58px;font-weight:900;letter-spacing:.08em;touch-action:manipulation}
+.intro-enter span{font-size:1.35em;transition:transform .25s ease}
+.intro-enter:hover span{transform:translateX(5px)}
+.intro-click-hint{margin-top:12px!important;color:var(--pink2)!important;letter-spacing:.08em!important;font-size:.72rem!important;opacity:.95}
+.intro.hide{pointer-events:none!important}
+@media(max-width:760px){.intro-enter{min-width:min(86vw,340px);min-height:60px;font-size:.82rem}}
+
+/* Spotify: añadido sin modificar la interfaz existente */
+.spotify-link{display:flex;align-items:center;justify-content:center;min-height:42px;margin:12px 0 8px;padding:0 16px;border:1px solid #ff2d72;border-radius:12px;background:linear-gradient(135deg,#1a0710,#2b101d);color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em;box-shadow:0 0 18px rgba(255,45,114,.18);transition:transform .2s ease,box-shadow .2s ease}
+.spotify-link:hover{transform:translateY(-2px);box-shadow:0 0 24px rgba(255,45,114,.35)}
+.spotify-footer{color:#ff5c8d;text-decoration:none;font-weight:800}
+.spotify-footer:hover{text-decoration:underline}
+
+/* Corrección final de la bienvenida: mensaje animado y entrada siempre clicable */
+.intro-message{animation:introMessagePulse 2.8s ease-in-out infinite!important}.intro-message span{display:block;color:var(--cream);animation:introTextIn 2.8s ease-in-out infinite}.intro-message strong{display:block;margin-top:14px;color:var(--pink2);font-family:inherit;font-size:.42em;letter-spacing:.18em;font-style:normal;animation:introUpcoming 2.8s ease-in-out infinite}@keyframes introMessagePulse{0%,100%{opacity:.35;transform:translateY(6px) scale(.98)}45%{opacity:1;transform:translateY(0) scale(1)}60%{opacity:1;transform:translateY(0) scale(1)}}@keyframes introTextIn{0%,100%{filter:blur(3px)}45%,60%{filter:blur(0)}}@keyframes introUpcoming{0%,100%{opacity:0;transform:scale(.92);letter-spacing:.28em}45%,65%{opacity:1;transform:scale(1);letter-spacing:.18em}}
+
+/* ===== CORRECCIÓN DE CENTRADO DEL INTRO =====
+   Mantiene exactamente la bienvenida existente y garantiza que el botón
+   "PULSA CLICK PARA ENTRAR" quede visible en pantallas bajas. */
+.intro{
+  min-height:100vh;
+  min-height:100svh;
+  min-height:100dvh;
+}
+.intro-center{
+  width:min(920px,100%);
+  height:100%;
+  max-height:100dvh;
+  padding:clamp(10px,2.2vh,28px) clamp(16px,4vw,48px);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(4px,1vh,10px);
+  overflow:visible;
+}
+.intro-logo{
+  width:min(400px,66vw);
+  max-height:min(42dvh,360px);
+  object-fit:contain;
+  flex:0 1 auto;
+}
+.intro-message{margin:0!important;flex:0 1 auto}
+.intro-message strong{margin-top:8px!important}
+.intro-center>p:not(.intro-click-hint){margin:2px 0 4px!important}
+.intro-enter{
+  margin-top:4px!important;
+  flex:0 0 auto;
+}
+.intro-click-hint{
+  margin:2px 0 0!important;
+  padding-bottom:max(0px,env(safe-area-inset-bottom));
+  flex:0 0 auto;
+}
+@media(max-height:760px){
+  .intro-center{padding-top:8px;padding-bottom:8px;gap:3px}
+  .intro-logo{width:min(330px,58vw);max-height:32dvh}
+  .intro-message{font-size:clamp(1.65rem,4.5vw,3.25rem)!important}
+  .intro-message strong{margin-top:4px!important}
+  .intro-center>p:not(.intro-click-hint){font-size:.62rem!important;margin:0!important}
+  .intro-enter{min-height:50px!important;margin-top:2px!important}
+  .intro-click-hint{font-size:.64rem!important;margin-top:0!important}
+}
+@media(max-width:760px){
+  .intro-center{padding:12px 16px 16px}
+  .intro-logo{width:min(310px,76vw);max-height:36dvh}
+  .intro-message{font-size:clamp(1.8rem,8vw,2.7rem)!important}
+  .intro-enter{min-width:min(88vw,340px)!important}
+}
+
+
+/* ===== AJUSTES SOLICITADOS: FLUIDEZ MÓVIL, ARRASTRE REAL Y MÚSICA VISIBLE ===== */
+html,body{width:100%;max-width:100%;overflow-x:clip;-webkit-text-size-adjust:100%;}
+body{min-height:100%;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:auto;}
+main{min-width:0;}
+/* El reproductor queda inmediatamente después de la bienvenida para que se vea al comenzar la página. */
+.hero + .music-section{margin-top:20px;}
+.music-section{scroll-margin-top:86px;}
+/* El merch no explica la navegación: solo muestra el acceso. */
+.merch-banner h2{margin:8px 0 18px;}
+/* Arrastre real en pantalla táctil sin bloquear el resto de la página. */
+.can{touch-action:pan-y;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;}
+.can.touch-dragging{opacity:.45;}
+.drag-ghost{position:fixed!important;left:0;top:0;width:112px!important;height:145px!important;object-fit:contain!important;pointer-events:none!important;z-index:9999!important;transform:translate(-50%,-50%) rotate(5deg)!important;filter:drop-shadow(0 18px 16px rgba(0,0,0,.72))!important;will-change:left,top,transform;}
+/* La lata entra visualmente en la bolsa antes de añadirse al carrito. */
+.bag-wrap.receiving .bag-can{animation:canEnterBag 1s cubic-bezier(.18,.88,.2,1) forwards!important;opacity:1!important;}
+@keyframes canEnterBag{0%{transform:translate(-50%,-125%) scale(.92);opacity:1}42%{transform:translate(-50%,-50%) scale(1.04);opacity:1}78%{transform:translate(-50%,8%) scale(.76);opacity:.95}100%{transform:translate(-50%,28%) scale(.48);opacity:0}}
+@media(max-width:760px){
+  .topbar{position:sticky;top:0;}
+  .hero + .music-section{margin-top:14px;}
+  .music-section{margin-top:14px!important;}
+  .experience-grid,.section-block,.support-grid{min-width:0;}
+  .fridge-wrap,.bag-zone{touch-action:pan-y;overscroll-behavior:auto;}
+  .can{min-height:104px;}
+  .bag-zone{overflow:hidden;}
+}
+
+
+/* FLUIDEZ EN CELULAR: el navegador conserva el scroll nativo y solo anima transform/opacity. */
+@media(max-width:760px){
+  body{position:relative;overflow-y:auto!important;touch-action:pan-y;}
+  .can,.fridge,.bag-wrap,.bag-can,.fridge-door,.real-fruit{will-change:auto;}
+  .drag-ghost{will-change:transform,left,top;}
+  .fridge-card,.bag-card,.music-section{contain:layout paint style;}
+}
+
+/* Merch final: cuatro piezas originales, separadas y sin paneles blancos */
+.organized-merch{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;height:auto!important;align-items:stretch}.organized-merch .merch-preview-item{position:relative!important;inset:auto!important;width:auto!important;height:255px!important;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:10px;border:1px solid rgba(213,157,55,.28);border-radius:18px;background:radial-gradient(circle at 50% 35%,rgba(230,31,88,.10),transparent 60%),rgba(5,4,4,.42);overflow:hidden}.organized-merch .merch-preview-item img{position:relative!important;inset:auto!important;width:100%!important;height:205px!important;object-fit:contain!important;display:block!important;background:transparent!important;mix-blend-mode:normal!important;filter:drop-shadow(0 12px 12px rgba(0,0,0,.5))}.organized-merch .merch-preview-item span{margin-top:8px;color:var(--gold);font-size:.68rem;font-weight:900;letter-spacing:.08em;text-align:center}.merch-only-grid{grid-template-columns:repeat(4,1fr)}.merch-card{overflow:hidden}.merch-card img{background:transparent!important;object-fit:contain!important}.merch-card:nth-child(1) img,.merch-card:nth-child(2) img,.merch-card:nth-child(3) img,.merch-card:nth-child(4) img{height:390px}
+@media(max-width:1000px){.organized-merch{grid-template-columns:repeat(2,1fr)}.merch-only-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.merch-banner{display:block}.merch-copy{text-align:left}.organized-merch{margin-top:24px;gap:10px}.organized-merch .merch-preview-item{height:205px;padding:7px}.organized-merch .merch-preview-item img{height:160px!important}.organized-merch .merch-preview-item span{font-size:.58rem}.merch-only-grid{grid-template-columns:1fr 1fr;gap:12px}.merch-card{padding:10px}.merch-card img,.merch-card:nth-child(1) img,.merch-card:nth-child(2) img,.merch-card:nth-child(3) img,.merch-card:nth-child(4) img{height:230px}.merch-card h3{font-size:.75rem}.merch-card p{font-size:.7rem}.merch-card .primary{padding:11px 6px;font-size:.63rem}}
+
+
+/* MERCH ARRASTRABLE: misma experiencia que las latas */
+.merch-drag-hero{gap:28px}.merch-drag-copy{font-size:1rem;line-height:1.5}.merch-bag-zone{height:420px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:28px;background:radial-gradient(circle at 50% 45%,rgba(230,31,88,.18),transparent 62%);border:1px solid rgba(213,157,55,.25);touch-action:pan-y}.merch-bag-zone.dragover{outline:2px dashed var(--pink2);background:radial-gradient(circle at 50% 45%,rgba(230,31,88,.3),transparent 62%)}.merch-bag-wrap{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center}.merch-bag-wrap>img:first-child{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 20px 24px rgba(0,0,0,.7))}.merch-bag-item{position:absolute!important;left:50%;top:51%;width:38%!important;height:52%!important;object-fit:contain!important;transform:translate(-50%,-50%) scale(.2);opacity:0;z-index:3;transition:transform .75s cubic-bezier(.2,.9,.2,1),opacity .35s ease;filter:drop-shadow(0 12px 10px rgba(0,0,0,.7))}.merch-bag-wrap.open .merch-bag-item{opacity:1;transform:translate(-50%,-50%) scale(1)}.merch-bag-wrap.receiving{animation:merchBagReceive .85s ease both}.merch-bag-wrap.receiving .merch-bag-item{animation:merchItemIntoBag .82s cubic-bezier(.18,.8,.22,1) both}@keyframes merchBagReceive{0%,100%{transform:scale(1)}45%{transform:scale(1.045) translateY(-4px)}70%{transform:scale(.98) translateY(2px)}}@keyframes merchItemIntoBag{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}62%{opacity:1;transform:translate(-50%,-42%) scale(.8)}100%{opacity:0;transform:translate(-50%,-18%) scale(.3)}}.merch-drop-label{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);background:#080606df;border:1px solid var(--gold);padding:9px 15px;border-radius:999px;color:var(--cream);font-size:.72rem;font-weight:800;text-align:center;z-index:8;max-width:90%}.merch-buy{cursor:grab;touch-action:pan-y;user-select:none}.merch-buy:active{cursor:grabbing}.merch-buy img{pointer-events:none}.merch-touch-dragging{opacity:.55}.merch-drag-hint{display:block;margin-top:8px;color:var(--pink2);font-size:.62rem;font-weight:900;letter-spacing:.05em}.merch-drag-ghost{width:145px!important;height:180px!important}.merch-card:hover{transform:translateY(-5px);transition:transform .2s ease}@media(max-width:760px){.merch-drag-hero{gap:14px}.merch-drag-copy{font-size:.88rem}.merch-bag-zone{height:330px;border-radius:22px}.merch-bag-item{width:44%!important;height:55%!important}.merch-drop-label{font-size:.62rem;bottom:10px}.merch-drag-hint{font-size:.52rem;line-height:1.2}.merch-buy{min-width:0}}
+
+
+/* ===== MERCH: PRODUCTOS EN COLUMNA + BOLSA AL LADO, OPTIMIZADO PARA CELULAR ===== */
+.merch-main{max-width:1180px;padding-bottom:80px}.merch-hero{min-height:auto!important;display:block!important;padding:28px 0 18px!important;overflow:visible!important}.merch-hero-copy{max-width:760px}.merch-hero h1{font-size:clamp(2.15rem,5vw,4.4rem)!important}.merch-drag-copy{font-size:1rem!important}
+.merch-music-mini{margin-top:18px;display:flex;align-items:center;gap:12px;max-width:520px;padding:12px 14px;border:1px solid rgba(230,31,88,.55);border-radius:16px;background:rgba(12,8,9,.82);box-shadow:0 10px 26px rgba(0,0,0,.24)}.merch-music-mini button{flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--pink),#b60d3c);font-weight:900}.merch-music-mini div{min-width:0}.merch-music-mini b,.merch-music-mini small{display:block}.merch-music-mini small{margin-top:2px;color:var(--muted);font-size:.72rem}
+.merch-interaction{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,430px);gap:30px;align-items:start;margin-top:14px}.merch-products-column{display:grid;grid-template-columns:1fr;gap:16px}.merch-products-column .merch-card{min-height:170px;display:grid;grid-template-columns:190px minmax(0,1fr);align-items:center;gap:16px;padding:14px 18px;overflow:visible;contain:layout paint style}.merch-products-column .merch-card img,.merch-products-column .merch-card:nth-child(1) img,.merch-products-column .merch-card:nth-child(2) img,.merch-products-column .merch-card:nth-child(3) img,.merch-products-column .merch-card:nth-child(4) img{width:100%!important;height:140px!important;object-fit:contain!important;background:transparent!important}.merch-products-column .merch-card:nth-child(3) img{transform:scale(.84)}.merch-info{min-width:0}.merch-info h3{margin:0 0 8px;font-size:1rem;color:var(--cream)}.merch-info p{margin:0;font-weight:900;color:var(--gold);font-size:1.08rem}.merch-bag-side{position:sticky;top:88px;min-width:0}.merch-bag-zone{height:min(68vh,560px);min-height:390px;max-height:560px;touch-action:pan-y;contain:layout paint style}.merch-bag-note{margin:10px 8px 0;text-align:center;color:var(--muted);font-size:.82rem;line-height:1.4}.merch-bag-wrap,.merch-bag-item{will-change:auto}.merch-bag-wrap>img:first-child{max-width:100%;max-height:100%;object-fit:contain}.merch-bag-item{will-change:transform,opacity}
+.merch-buy{touch-action:pan-y;-webkit-user-select:none;user-select:none}.merch-drag-ghost{width:150px!important;height:150px!important;max-width:42vw!important;max-height:28vh!important}
+@media (max-width:900px){.merch-interaction{grid-template-columns:minmax(0,1fr) 300px;gap:18px}.merch-products-column .merch-card{grid-template-columns:140px minmax(0,1fr)}.merch-products-column .merch-card img,.merch-products-column .merch-card:nth-child(1) img,.merch-products-column .merch-card:nth-child(2) img,.merch-products-column .merch-card:nth-child(3) img,.merch-products-column .merch-card:nth-child(4) img{height:118px!important}.merch-bag-zone{min-height:350px;height:52vh}}
+@media (max-width:700px){.merch-main{padding:16px 16px 56px!important}.merch-hero{padding:8px 0 12px!important}.merch-hero h1{font-size:clamp(2rem,10vw,3rem)!important}.merch-drag-copy{font-size:.9rem!important}.merch-music-mini{max-width:none;margin-top:14px}.merch-interaction{display:flex;flex-direction:column;gap:18px;margin-top:8px}.merch-bag-side{position:sticky;top:64px;z-index:12;width:100%;order:-1;background:linear-gradient(to bottom,rgba(7,5,5,.98),rgba(7,5,5,.88));padding:6px 0 10px}.merch-bag-zone{height:clamp(245px,38dvh,360px);min-height:245px;max-height:360px;border-radius:20px}.merch-bag-wrap>img:first-child{width:92%;height:92%}.merch-drop-label{bottom:8px;font-size:.6rem;padding:8px 12px}.merch-bag-note{font-size:.72rem;margin-top:6px}.merch-products-column{width:100%;gap:12px}.merch-products-column .merch-card{min-height:124px;grid-template-columns:112px minmax(0,1fr);gap:10px;padding:10px 12px;border-radius:18px}.merch-products-column .merch-card img,.merch-products-column .merch-card:nth-child(1) img,.merch-products-column .merch-card:nth-child(2) img,.merch-products-column .merch-card:nth-child(3) img,.merch-products-column .merch-card:nth-child(4) img{height:102px!important}.merch-products-column .merch-card:nth-child(3) img{transform:scale(.78)}.merch-info h3{font-size:.82rem;margin-bottom:5px}.merch-info p{font-size:.95rem}.merch-drag-hint{font-size:.48rem!important;line-height:1.25;margin-top:5px}.merch-drag-ghost{width:110px!important;height:125px!important;max-width:34vw!important;max-height:22vh!important}.merch-touch-dragging{opacity:.5}.merch-bag-zone.dragover{outline-width:2px}}
+@media (max-width:380px){.merch-products-column .merch-card{grid-template-columns:92px minmax(0,1fr);min-height:112px}.merch-products-column .merch-card img,.merch-products-column .merch-card:nth-child(1) img,.merch-products-column .merch-card:nth-child(2) img,.merch-products-column .merch-card:nth-child(3) img,.merch-products-column .merch-card:nth-child(4) img{height:88px!important}.merch-info h3{font-size:.74rem}.merch-bag-zone{height:230px;min-height:230px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Arrastre robusto: durante el arrastre real se bloquea solo el scroll mientras el dedo sostiene el producto. */
+body.oqp-drag-active{overscroll-behavior:none!important;touch-action:none!important;user-select:none!important;-webkit-user-select:none!important;}
+.drag-ghost{position:fixed!important;pointer-events:none!important;z-index:2147483647!important;left:0!important;top:0!important;transition:none!important;}
+
+
+/* ===== RUTAS DE DIMENSIÓN SEPARADAS SOLICITADAS =====
+   Escritorio y pantallas táctiles usan reglas distintas sin cambiar contenido. */
+html[data-oqp-device="desktop"] .merch-page .merch-card{
+  touch-action:auto;
+}
+html[data-oqp-device="desktop"] .merch-page .merch-bag-zone{
+  min-width:320px;
+}
+html[data-oqp-device="mobile"] .merch-page .merch-card{
+  touch-action:none;
+  -webkit-user-select:none;
+  user-select:none;
+}
+html[data-oqp-device="mobile"] .merch-page .merch-card img{
+  pointer-events:none;
+}
+@media (max-width: 760px){
+  html[data-oqp-device="mobile"] .merch-page .merch-interaction{
+    width:100%;
+    max-width:100%;
+  }
+  html[data-oqp-device="mobile"] .merch-page .merch-bag-zone{
+    width:100%;
+    max-width:100%;
+    min-height:280px;
+  }
+}
+@media (min-width: 761px){
+  html[data-oqp-device="desktop"] .merch-page .merch-interaction{
+    width:100%;
+  }
+}
+
+
+/* CIUDADES DISPONIBLES: se arman una sola vez y luego quedan fijas */
+.cities-presence{margin:18px 0 8px}
+.cities-label{display:block;font-size:.68rem;letter-spacing:.2em;color:var(--cream);margin-bottom:8px}
+.cities-assemble{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;overflow:hidden;min-height:34px}
+.city-word{display:inline-block;color:#ff5c9b;font-weight:900;letter-spacing:.06em;text-shadow:0 0 14px rgba(255,92,155,.35);opacity:0;animation-fill-mode:forwards}
+.city-1{transform:translateX(-130px) rotate(-8deg);animation:cityLeft .8s .15s cubic-bezier(.2,.9,.2,1) forwards}
+.city-2{transform:translateY(-70px) scale(.7);animation:cityTop .8s .85s cubic-bezier(.2,.9,.2,1) forwards}
+.city-3{transform:translateX(150px) rotate(8deg);animation:cityRight .8s 1.55s cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes cityLeft{to{transform:translateX(0) rotate(0);opacity:1}}
+@keyframes cityTop{to{transform:translateY(0) scale(1);opacity:1}}
+@keyframes cityRight{to{transform:translateX(0) rotate(0);opacity:1}}
+
+/* CHECKOUT: ciudad y datos de entrega */
+.checkout-modal{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.72);backdrop-filter:blur(12px);overflow:auto}
+.checkout-modal.show{display:flex}
+.checkout-card{position:relative;width:min(680px,100%);max-height:min(92vh,900px);overflow:auto;border:1px solid var(--line);border-radius:24px;padding:28px;background:linear-gradient(145deg,#170d0d,#080606);box-shadow:0 30px 100px rgba(0,0,0,.65)}
+.checkout-card h2{margin:5px 0 8px}.checkout-subtitle{color:var(--muted)}
+.city-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.city-option{min-height:92px;padding:12px;border:1px solid rgba(255,255,255,.13);border-radius:16px;background:#0d0909;color:var(--text);text-align:center;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.city-option span{font-weight:900;color:#ff5c9b}.city-option small{color:var(--muted)}
+.city-option.selected{border-color:var(--pink2);box-shadow:0 0 0 2px rgba(255,77,133,.16);background:rgba(230,31,88,.11)}
+.delivery-status{min-height:24px;margin:4px 0 12px;color:var(--cream);font-weight:700}
+.delivery-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.delivery-form label{display:flex;flex-direction:column;gap:6px;color:var(--cream);font-size:.85rem}
+.delivery-form label span{color:var(--muted);font-size:.72rem}
+.delivery-form input,.delivery-form textarea{width:100%;border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px;background:#0a0808;color:var(--text);outline:none}
+.delivery-form input:focus,.delivery-form textarea:focus{border-color:var(--pink2)}
+.delivery-form label:nth-of-type(3),.delivery-form label:nth-of-type(4),.delivery-form label:nth-of-type(5),.delivery-form label:nth-of-type(6),.delivery-form button{grid-column:1/-1}
+
+/* Móvil: zona real de la bolsa y eventos táctiles independientes */
+@media (max-width:760px),(pointer:coarse){
+  .merch-card[data-merch-card]{touch-action:none;-webkit-user-select:none;user-select:none}
+  .merch-card[data-merch-card] img{pointer-events:none;-webkit-user-drag:none;user-drag:none}
+  .merch-bag-zone{position:relative;touch-action:none}
+  .merch-bag-zone.dragover{transform:scale(1.025);filter:drop-shadow(0 0 18px rgba(255,77,133,.35))}
+  .merch-drag-ghost{will-change:transform;filter:drop-shadow(0 16px 24px rgba(0,0,0,.5))}
+  .city-options{grid-template-columns:1fr}
+  .delivery-form{grid-template-columns:1fr}
+  .checkout-card{padding:22px 16px;border-radius:20px}
+  .cities-assemble{gap:7px 10px}
+  .city-word{font-size:.88rem}
+}
+
+
+/* === SOLO EFECTOS VISUALES SOLICITADOS === */
+
+/* CIUDADES: las letras llegan desde diferentes lados y luego quedan quietas */
+.cities-assemble{overflow:visible}
+.city-word{
+  display:inline-flex;
+  align-items:center;
+  white-space:nowrap;
+  opacity:1 !important;
+  transform:none !important;
+  animation:none !important;
+}
+.city-letter,.city-star{
+  display:inline-block;
+  color:#ff5c9b;
+  font-weight:900;
+  text-shadow:0 0 15px rgba(255,92,155,.42);
+}
+.city-letter{
+  opacity:0;
+  animation:cityAssemble .55s cubic-bezier(.2,.9,.2,1) forwards;
+  animation-delay:calc(var(--i) * .055s);
+}
+.city-2 .city-letter{animation-delay:calc(.95s + var(--i) * .055s)}
+.city-3 .city-letter{animation-delay:calc(1.60s + var(--i) * .055s)}
+.city-letter.from-left{transform:translateX(-85px) rotate(-8deg)}
+.city-letter.from-right{transform:translateX(85px) rotate(8deg)}
+.city-letter.from-top{transform:translateY(-65px) rotate(-6deg)}
+.city-letter.from-bottom{transform:translateY(65px) rotate(6deg)}
+.city-space{width:.32em}
+.city-star{
+  opacity:0;
+  transform:scale(.35);
+  animation:cityStarIn .45s cubic-bezier(.2,.9,.2,1) forwards;
+}
+.city-1 .city-star{animation-delay:0s}
+.city-2 .city-star{animation-delay:.90s}
+.city-3 .city-star{animation-delay:2.12s}
+@keyframes cityAssemble{
+  to{opacity:1;transform:translate3d(0,0,0) rotate(0)}
+}
+@keyframes cityStarIn{
+  to{opacity:1;transform:scale(1)}
+}
+
+/* FRUTAS EXISTENTES DETRÁS DEL LOGO: visibles, flotando y orbitando.
+   No se agregan productos nuevos ni se toca la estructura funcional. */
+.hero-art{position:relative;overflow:visible}
+.hero-art .hero-logo{position:relative;z-index:4}
+.fruit-orbit{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:2 !important;
+  pointer-events:none !important;
+  overflow:visible !important;
+}
+.fruit-orbit img{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  position:absolute !important;
+  left:50% !important;
+  top:50% !important;
+  max-width:none !important;
+  filter:drop-shadow(0 10px 12px rgba(0,0,0,.35));
+  will-change:transform;
+}
+
+/* Se usan las mismas frutas que YA existen en el HTML */
+.fruit-orbit img:nth-child(1){--radius:180px;--start:0deg;animation:existingFruitOrbit 13s linear infinite !important}
+.fruit-orbit img:nth-child(2){--radius:165px;--start:72deg;animation:existingFruitOrbit 16s linear infinite !important}
+.fruit-orbit img:nth-child(3){--radius:190px;--start:144deg;animation:existingFruitOrbit 15s linear infinite !important}
+.fruit-orbit img:nth-child(4){--radius:170px;--start:216deg;animation:existingFruitOrbit 12s linear infinite !important}
+.fruit-orbit img:nth-child(5){--radius:185px;--start:288deg;animation:existingFruitOrbit 17s linear infinite !important}
+
+@keyframes existingFruitOrbit{
+  from{
+    transform:translate(-50%,-50%) rotate(var(--start))
+      translateX(var(--radius)) rotate(calc(-1 * var(--start)));
+  }
+  50%{
+    transform:translate(-50%,-50%) rotate(calc(var(--start) + 180deg))
+      translateX(var(--radius)) rotate(calc(-1 * (var(--start) + 180deg))) translateY(-10px);
+  }
+  to{
+    transform:translate(-50%,-50%) rotate(calc(var(--start) + 360deg))
+      translateX(var(--radius)) rotate(calc(-1 * (var(--start) + 360deg)));
+  }
+}
+
+@media(max-width:760px){
+  .fruit-orbit img:nth-child(1){--radius:100px}
+  .fruit-orbit img:nth-child(2){--radius:88px}
+  .fruit-orbit img:nth-child(3){--radius:106px}
+  .fruit-orbit img:nth-child(4){--radius:92px}
+  .fruit-orbit img:nth-child(5){--radius:104px}
+  .city-word{font-size:.82rem}
+}
+
+
+/* === CORRECCIÓN ÚNICA: HACER MUCHO MÁS VISIBLES LAS FIGURAS DETRÁS DEL LOGO === */
+.fruit-orbit{
+  z-index:3 !important;
+  inset:-22% !important;
+}
+.hero-art .hero-logo{z-index:4 !important}
+
+.fruit-orbit img{
+  opacity:1 !important;
+  visibility:visible !important;
+  display:block !important;
+  filter:drop-shadow(0 12px 18px rgba(0,0,0,.28))
+         brightness(1.16)
+         saturate(1.12) !important;
+}
+
+.fruit-orbit img:nth-child(1){--radius:235px !important;transform:scale(1.22)}
+.fruit-orbit img:nth-child(2){--radius:220px !important;transform:scale(1.22)}
+.fruit-orbit img:nth-child(3){--radius:245px !important;transform:scale(1.22)}
+.fruit-orbit img:nth-child(4){--radius:225px !important;transform:scale(1.22)}
+.fruit-orbit img:nth-child(5){--radius:240px !important;transform:scale(1.22)}
+
+@media(max-width:760px){
+  .fruit-orbit{inset:-28% !important}
+  .fruit-orbit img:nth-child(1){--radius:135px !important}
+  .fruit-orbit img:nth-child(2){--radius:125px !important}
+  .fruit-orbit img:nth-child(3){--radius:142px !important}
+  .fruit-orbit img:nth-child(4){--radius:130px !important}
+  .fruit-orbit img:nth-child(5){--radius:140px !important}
+}
+
+/* === SOLO OPTIMIZACIÓN DE RENDIMIENTO PARA ANDROID/TOUCH ===
+   No cambia contenido, imágenes, productos, rutas ni funciones. */
+@media (pointer: coarse){
+  .fruit-orbit img,
+  .orbit-food,
+  .real-fruit,
+  .real-fruit-orbit img{
+    animation-duration:24s !important;
+    will-change:auto !important;
+  }
+  .fruit-orbit,
+  .real-fruit-orbit{
+    contain:layout paint;
+  }
+}
+
+/* Solo apariencia del estado de escritura del asistente */
+#chat .typing{display:flex;gap:5px;align-items:center;min-height:18px}
+#chat .typing span{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.35;animation:ohTyping 1s infinite ease-in-out}
+#chat .typing span:nth-child(2){animation-delay:.15s}
+#chat .typing span:nth-child(3){animation-delay:.3s}
+@keyframes ohTyping{0%,60%,100%{transform:translateY(0);opacity:.3}30%{transform:translateY(-4px);opacity:.9}}
+
+/* SOLO LOCALIDAD / ENTREGA */
+.locality-cta{margin:10px 0 4px;padding:10px 16px;border:1px solid rgba(255,92,155,.45);border-radius:999px;background:transparent;color:#ff5c9b;font-weight:900;letter-spacing:.08em;cursor:pointer}
+.delivery-summary{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:10px 0 14px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.delivery-summary span{color:#ff5c9b;font-weight:800}
+.juarez-zone{margin:0 0 14px}
+.juarez-zone label{display:flex;flex-direction:column;gap:6px;color:var(--cream);font-size:.85rem}
+.juarez-zone select{border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px;background:#0a0808;color:var(--text)}
+
+/* SOPORTE: rostro de Ottavio solo como identificación del asistente */
+.chat-head{display:flex;align-items:center;gap:10px;padding:4px 0 12px;border-bottom:1px solid #ffffff18;margin-bottom:8px}.chat-head img{width:48px;height:58px;object-fit:contain;object-position:top;border-radius:12px;background:#0b0808;border:1px solid var(--line)}.chat-head div{display:grid;gap:3px}.chat-head b{color:var(--cream);font-size:.9rem}.chat-head span{color:var(--muted);font-size:.72rem}
+#chat .bot{display:flex;align-items:flex-start;gap:8px}.typing{display:flex!important}
+
+#chat .chat-avatar{width:30px;height:38px;object-fit:contain;object-position:top;flex:0 0 auto}
+
+/* ZONAS DE ENTREGA: acordeón por ciudad */
+.delivery-zones{margin:0 0 16px}.zone-help{margin:0 0 9px;color:var(--muted);font-size:.82rem}.zone-accordion{border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;margin:8px 0;background:rgba(255,255,255,.025)}.zone-toggle{width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px 15px;border:0;background:transparent;color:var(--cream);font-weight:900;text-align:left;cursor:pointer}.zone-chevron{color:#ff5c9b;font-size:1.2rem}.zone-panel{padding:0 10px 10px}.area-option{display:block;width:100%;padding:9px 10px;margin-top:6px;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:#0a0808;color:var(--text);text-align:left;cursor:pointer}.area-option.selected{border-color:var(--pink2);background:rgba(230,31,88,.11);color:var(--cream)}
+
+/* === DESPLEGABLES DE ZONAS DE ENTREGA === */
+.delivery-zones{margin-top:14px}.zone-help{margin:0 0 10px;color:var(--muted);font-size:.82rem;line-height:1.45}.zone-help strong{display:block;color:var(--cream);font-size:1rem;margin-bottom:3px}.zone-accordion{border:1px solid #ffffff18;border-radius:12px;overflow:hidden;margin:8px 0;background:#0b0808}.zone-toggle{width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left;padding:13px 14px;background:transparent;color:var(--cream);font-weight:900;font-size:.82rem}.zone-toggle:hover{background:#ffffff08}.zone-chevron{color:var(--gold);font-size:1.1rem}.zone-panel{padding:6px 8px 10px;border-top:1px solid #ffffff12}.area-option{display:block;width:100%;text-align:left;padding:10px 11px;margin:2px 0;border-radius:8px;background:transparent;color:var(--muted);font-size:.78rem}.area-option:hover,.area-option.selected{background:#ffffff0c;color:var(--cream);border-left:2px solid var(--gold)}

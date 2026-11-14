@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Oh! Qué Postre — Hechos con Capas de Amor</title><meta name="theme-color" content="#070505"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- INTRO: se mantiene como entrada principal de la experiencia -->
+<section class="intro" id="intro" aria-label="Bienvenida Oh Qué Postre">
+  <div class="intro-fruits real-fruits" aria-hidden="true">
+<img class="real-fruit a" src="assets/transparent/fruit-strawberry.webp" alt=""><img class="real-fruit b" src="assets/transparent/fruit-lime.webp" alt=""><img class="real-fruit c" src="assets/transparent/fruit-passion.webp" alt=""><img class="real-fruit d" src="assets/transparent/fruit-chocolate.webp" alt=""><img class="real-fruit e" src="assets/transparent/fruit-strawberry2.webp" alt=""><img class="real-fruit f" src="assets/transparent/fruit-cream.webp" alt=""><img class="real-fruit g" src="assets/transparent/fruit-lime.webp" alt=""></div>
+  <div class="intro-center"><img src="assets/transparent/logo.webp" class="intro-logo" alt="Oh Qué Postre"><h1 class="intro-message"><span>Algo delicioso está por llegar</span><strong>PRÓXIMAMENTE</strong></h1><p>HECHOS CON CAPAS DE AMOR ♥</p><button type="button" class="primary intro-enter" id="enterSite">PULSA CLICK PARA ENTRAR <span aria-hidden="true">→</span></button><p class="intro-click-hint">Haz clic para descubrir Oh! Qué Postre</p></div>
+</section>
+
+<header class="topbar">
+  <a class="brand" href="#inicio"><img src="assets/transparent/logo.webp" alt="Oh! Qué Postre"><span>Hechos con Capas de Amor ♥</span></a>
+  <nav><a href="#sabores">Sabores</a><a href="#musica">Música</a><a href="merch.html">Merch</a><a href="#soporte">IA Soporte</a></nav>
+  <div class="top-actions"><button class="account-btn" id="openAccount">Entrar / Registro</button><button class="cart-top" id="openCart" aria-label="Abrir bolsa de compra"><span>🛍️</span><b id="cartCount">0</b></button></div>
+</header>
+
+<main id="inicio">
+<section class="hero app-card">
+  <div class="hero-copy"><p class="eyebrow">♥ HECHOS CON CAPAS DE AMOR ♥</p><h1>Elige tu sabor favorito<br><em>y llévalo contigo.</em></h1>
+  <button type="button" class="locality-cta" id="localityCta">PIDE EN CIUDAD JUÁREZ</button>
+    <div class="cities-presence" aria-label="Disponible en Ciudad Juárez">
+    <span class="cities-label">ESTAMOS EN</span>
+    <div class="cities-assemble">
+      <span class="city-word city-1"><span class="city-star">✦</span><span class="city-letter from-right" style="--i:0">C</span><span class="city-letter from-top" style="--i:1">I</span><span class="city-letter from-bottom" style="--i:2">U</span><span class="city-letter from-left" style="--i:3">D</span><span class="city-letter from-right" style="--i:4">A</span><span class="city-letter from-top" style="--i:5">D</span><span class="city-letter city-space"> </span><span class="city-letter from-left" style="--i:7">J</span><span class="city-letter from-right" style="--i:8">U</span><span class="city-letter from-top" style="--i:9">Á</span><span class="city-letter from-bottom" style="--i:10">R</span><span class="city-letter from-left" style="--i:11">E</span><span class="city-letter from-right" style="--i:12">Z</span></span>
+    </div>
+  </div><p>Explora las 7 latas originales, abre el refrigerador y arrastra la que más te guste hacia tu bolsa de compra.</p><div class="hero-actions"><a class="primary" href="#experiencia">COMENZAR</a><a class="ghost" href="#sabores">VER 7 SABORES</a></div></div>
+  <div class="hero-art"><div class="fruit-orbit real-fruit-orbit"><img src="assets/transparent/fruit-strawberry.webp" alt=""><img src="assets/transparent/fruit-lime.webp" alt=""><img src="assets/transparent/fruit-passion.webp" alt=""><img src="assets/transparent/fruit-chocolate.webp" alt=""><img src="assets/transparent/fruit-cream.webp" alt=""></div><img class="hero-logo" src="assets/transparent/logo.webp" alt="Oh Qué Postre"></div>
+</section>
+
+<section id="musica" class="music-section app-card"><div class="music-cover"><div class="cover-neon">VICIO 2<small>OH QUÉ POSTRE</small></div><div class="wave">▁▃▅▂▆▇▃▁▅▂▇▅▂▆▃▁</div></div><div class="player-info"><p class="eyebrow">MÚSICA · PRUEBA TEMPORAL</p><h2>Vicio 2</h2><h3>Flow 3D Ink</h3><audio id="audio" src="assets/vicio-2.mp3" preload="metadata"></audio><div class="progress-row"><span id="currentTime">0:00</span><input id="progress" type="range" min="0" value="0" step="0.1"><span id="duration">0:00</span></div><div class="controls"><button id="prev">⏮</button><button id="play" class="play">▶</button><button id="next">⏭</button></div><div class="volume-row"><button id="mute" class="mute" aria-label="Silenciar o activar volumen">🔊</button><input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volumen"><span id="volumeValue">85%</span></div><a class="spotify-link" href="https://open.spotify.com/album/6sTX6AnAhMlc1kfGoeTaWn?si=SN9-qpJdRweBTJv5Ygz0xg" target="_blank" rel="noopener noreferrer" aria-label="Escuchar Vicio 2 en Spotify">▶ Escuchar el álbum en Spotify</a><p class="temporary">Esta canción es temporal de prueba mientras seguimos trabajando en la web y la app.</p></div></section>
+
+<section id="experiencia" class="experience-grid">
+  <article class="fridge-card app-card"><div class="section-title"><span>01</span><div><h2>ELIGE TU SABOR</h2><p>Abre el refri y escoge una de nuestras 7 latas originales</p></div></div>
+    <div class="fridge-wrap"><button class="fridge-handle" id="toggleFridge">ABRIR REFRI</button><div class="fridge" id="fridgeBox"><div class="fridge-light"></div><button class="fridge-door" id="fridgeDoor" aria-label="Abrir o cerrar puerta completa del refrigerador"><div class="door-glass"></div><div class="door-reflection"></div><div class="door-handle"></div></button><div class="fridge-top"></div><div class="fridge-inner"><div class="shelves" id="fridge"></div></div></div></div>
+
+    <p class="hint">Abre la puerta completa de cristal y arrastra una lata hacia la bolsa.</p>
+  </article>
+
+  <article class="bag-card app-card"><div class="section-title"><span>02</span><div><h2>LLÉVALA CONTIGO</h2><p>Tu bolsa original se abre cuando entra tu lata</p></div></div>
+    <div class="bag-zone" id="bagZone"><div class="bag-shadow"></div><div class="bag-wrap" id="bagWrap"><img id="bagImage" src="assets/transparent/bolsa-original.webp" alt="Bolsa de compra original Oh Qué Postre"><img id="bagCan" class="bag-can hidden" alt="Lata seleccionada"></div><div class="drop-label" id="dropLabel">ARRASTRA TU LATA AQUÍ</div></div>
+    <button class="primary full" id="addSelected" disabled>AGREGAR A MI BOLSA</button>
+  </article>
+
+  <article class="cart-preview app-card"><div class="section-title"><span>03</span><div><h2>TU COMPRA</h2><p>Todo lo que entra a la bolsa aparece aquí</p></div></div><div id="miniCart" class="mini-cart empty">Aún no has elegido una lata.</div><button class="primary full" id="checkoutBtn">PROCEDER AL PAGO</button><p class="payment-note">La conexión de pago queda lista para integrar Stripe o PayPal.</p></article>
+</section>
+
+<section id="sabores" class="section-block"><div class="center-title"><p>♥ NUESTROS</p><h2>7 SABORES</h2><span>Las imágenes originales se mantienen sin fondos blancos añadidos</span></div><div class="product-grid" id="products"></div></section>
+
+
+
+<section class="merch-banner app-card"><div class="merch-copy"><p class="eyebrow">♥ MERCH OFICIAL ♥</p><h2>MERCH OFICIAL</h2><a class="primary" href="merch.html">ENTRAR A MERCH</a></div><div class="merch-mini organized-merch"><div class="merch-preview-item"><img src="assets/transparent/gorra-oficial.webp" alt="Gorra oficial"><span>GORRA</span></div><div class="merch-preview-item"><img src="assets/transparent/vaso-oficial.webp" alt="Vaso térmico"><span>VASO TÉRMICO</span></div><div class="merch-preview-item"><img src="assets/transparent/pin-oficial.webp" alt="Pin oficial"><span>PIN</span></div><div class="merch-preview-item"><img src="assets/transparent/delantal-oficial.webp" alt="Delantal oficial"><span>DELANTAL</span></div></div></section>
+
+<section id="soporte" class="support-grid"><article class="support-card app-card"><p class="eyebrow">IA SOPORTE 24/7</p><h2>Oh! Asistente</h2><div class="chat-head"><img src="assets/ottavio-standing.png" alt="Ottavio"><div><b>Ottavio “Oh” Dolce</b><span>Asistente en línea</span></div></div><div id="chat" aria-live="polite"></div><form id="chatForm"><input id="chatInput" placeholder="Escribe tu mensaje..."><button>➤</button></form></article><article class="benefits app-card"><div>🛡️<b>SEGURA</b><span>Tus datos protegidos</span></div><div>⚡<b>RÁPIDA</b><span>Experiencia fluida</span></div><div>☝️<b>FÁCIL</b><span>Todo a un toque</span></div><div>🤖<b>IA SOPORTE 24/7</b><span>Para ayudarte siempre</span></div></article></section>
+</main>
+
+<aside class="cart-drawer" id="drawer"><div class="drawer-head"><div><p class="eyebrow">MI BOLSA</p><h2>Tu compra</h2></div><button id="closeCart">×</button></div><div id="cartItems"></div><div class="drawer-total"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="primary full" id="drawerCheckout">PROCEDER AL PAGO</button></aside><div class="overlay" id="overlay"></div>
+
+
+
+<div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+  <div class="checkout-card">
+    <button class="modal-close" id="closeCheckout" type="button">×</button>
+    <p class="eyebrow">🚚 ENTREGA</p>
+    <h2>Entrega en Ciudad Juárez</h2>
+    <p class="checkout-subtitle">Por ahora, las ventas están disponibles únicamente en Ciudad Juárez.</p>
+
+    <form id="deliveryForm" class="delivery-form">
+      <input id="deliveryCity" type="hidden" value="Ciudad Juárez, Chihuahua">
+      <label>Nombre completo<input id="deliveryName" autocomplete="name" required></label>
+      <label>Teléfono<input id="deliveryPhone" type="tel" autocomplete="tel" required></label>
+      <label>Dirección completa<input id="deliveryAddress" autocomplete="street-address" required></label>
+      <label>Colonia / Barrio<input id="deliveryNeighborhood" autocomplete="address-line2"></label>
+      <label>Código postal<input id="deliveryZip" inputmode="numeric" autocomplete="postal-code" required></label>
+      <label>Referencias para encontrar tu domicilio <span>(opcional)</span><textarea id="deliveryReference" rows="2"></textarea></label>
+      <button class="primary full" type="submit">CONTINUAR AL PAGO</button>
+    </form>
+  </div>
+</div>
+<div class="account-modal" id="accountModal"><div class="account-card"><button class="modal-close" id="closeAccount">×</button><img src="assets/transparent/logo.webp" alt="Oh Qué Postre"><div class="account-tabs"><button class="active" data-tab="login">Iniciar sesión</button><button data-tab="register">Crear cuenta</button></div><form id="accountForm"><div class="register-only hidden"><input placeholder="Nombre completo"></div><input id="accountEmail" type="email" placeholder="Correo electrónico" required><input id="accountPass" type="password" placeholder="Contraseña" required><p class="forgot">¿Olvidaste tu contraseña?</p><button class="primary full" id="accountSubmit">INICIAR SESIÓN</button></form><p class="account-status" id="accountStatus"></p></div></div>
+<div class="toast" id="toast"></div>
+<footer><img src="assets/transparent/logo.webp" alt="Oh Qué Postre"><p>SÍGUENOS · TikTok · Instagram @ohquepostre</p><p>♪ <a class="spotify-footer" href="https://open.spotify.com/album/6sTX6AnAhMlc1kfGoeTaWn?si=SN9-qpJdRweBTJv5Ygz0xg" target="_blank" rel="noopener noreferrer">Escucha Vicio 2 en Spotify</a> · Flow 3D Ink</p></footer>
+<script src="app.js"></script>
+</body></html>

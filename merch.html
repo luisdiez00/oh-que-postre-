@@ -1,0 +1,63 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Merch Oficial — Oh! Qué Postre</title><meta name="theme-color" content="#070505"><link rel="stylesheet" href="styles.css"></head><body class="merch-page">
+<header class="topbar"><a class="brand" href="index.html"><img src="assets/transparent/logo.webp" alt="Oh Qué Postre"><span>Volver a Oh! Qué Postre</span></a><nav><a href="index.html">Inicio</a><a href="index.html#sabores">Sabores</a><a class="nav-active" href="merch.html">Merch</a></nav><div class="top-actions"><a class="account-btn" href="index.html#inicio">Entrar / Registro</a><button class="cart-top" id="openCart">🛍️ <b id="cartCount">0</b></button></div></header>
+<main class="merch-main">
+<section class="merch-hero merch-drag-hero">
+  <div class="merch-hero-copy">
+    <p class="eyebrow">♥ MERCH OFICIAL ♥</p>
+    <h1>OH! QUÉ POSTRE<br><em>MERCH OFICIAL</em></h1>
+    <p class="merch-drag-copy">Elige una pieza, mantenla pulsada y arrástrala hacia la bolsa.</p>
+  </div>
+  <div class="merch-music-mini" aria-label="Reproductor de música">
+    <audio id="merchAudio" src="assets/vicio-2.mp3" preload="metadata"></audio>
+    <button id="merchMusicToggle" type="button" aria-label="Pausar o reproducir música">❚❚</button>
+    <div><b>Vicio 2</b><small>Flow 3D Ink · sigue sonando</small></div>
+  </div>
+</section>
+<section class="merch-interaction" aria-label="Arrastra tu merch a la bolsa">
+  <div class="merch-products-column">
+    <article class="merch-card merch-buy" data-merch-card data-merch="Gorra oficial" data-price="350" data-img="assets/transparent/gorra-oficial.webp"><img draggable="false" src="assets/transparent/gorra-oficial.webp" alt="Gorra oficial original"><div class="merch-info"><h3>GORRA OFICIAL</h3><p>$350.00</p><span class="merch-drag-hint">MANTÉN Y ARRASTRA A LA BOLSA</span></div></article>
+    <article class="merch-card merch-buy" data-merch-card data-merch="Vaso oficial" data-price="475" data-img="assets/transparent/vaso-oficial.webp"><img draggable="false" src="assets/transparent/vaso-oficial.webp" alt="Vaso oficial original"><div class="merch-info"><h3>VASO OFICIAL</h3><p>$475.00</p><span class="merch-drag-hint">MANTÉN Y ARRASTRA A LA BOLSA</span></div></article>
+    <article class="merch-card merch-buy" data-merch-card data-merch="Pin oficial" data-price="120" data-img="assets/transparent/pin-oficial.webp"><img draggable="false" src="assets/transparent/pin-oficial.webp" alt="Pin oficial original"><div class="merch-info"><h3>PIN OFICIAL</h3><p>$120.00</p><span class="merch-drag-hint">MANTÉN Y ARRASTRA A LA BOLSA</span></div></article>
+    <article class="merch-card merch-buy" data-merch-card data-merch="Delantal oficial" data-price="349" data-img="assets/transparent/delantal-oficial.webp"><img draggable="false" src="assets/transparent/delantal-oficial.webp" alt="Delantal oficial original"><div class="merch-info"><h3>DELANTAL OFICIAL</h3><p>$349.00</p><span class="merch-drag-hint">MANTÉN Y ARRASTRA A LA BOLSA</span></div></article>
+  </div>
+  <aside class="merch-bag-side">
+    <div class="merch-bag-zone" id="merchBagZone" aria-label="Arrastra aquí tu merch">
+      <div class="merch-bag-wrap" id="merchBagWrap">
+        <img id="merchBagImage" src="assets/transparent/bolsa-original.webp" alt="Bolsa original Oh Qué Postre">
+        <img id="merchBagItem" class="merch-bag-item hidden" alt="Producto de merch seleccionado">
+      </div>
+      <div class="merch-drop-label" id="merchDropLabel">ARRASTRA TU MERCH AQUÍ</div>
+    </div>
+    <p class="merch-bag-note">Suelta el producto dentro de la bolsa para agregarlo a tu compra.</p>
+  </aside>
+</section>
+</main>
+<aside class="cart-drawer" id="drawer"><div class="drawer-head"><div><p class="eyebrow">MI BOLSA</p><h2>Tu compra</h2></div><button id="closeCart">×</button></div><div id="cartItems"></div><div class="drawer-total"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="primary full" id="drawerCheckout">PROCEDER AL PAGO</button></aside><div class="overlay" id="overlay"></div>
+
+<div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+  <div class="checkout-card">
+    <button class="modal-close" id="closeCheckout" type="button">×</button>
+    <p class="eyebrow">🚚 ENTREGA</p>
+    <h2>Entrega en Ciudad Juárez</h2>
+    <p class="checkout-subtitle">Por ahora, las ventas están disponibles únicamente en Ciudad Juárez.</p>
+
+    <form id="deliveryForm" class="delivery-form">
+      <input id="deliveryCity" type="hidden" value="Ciudad Juárez, Chihuahua">
+      <label>Nombre completo<input id="deliveryName" autocomplete="name" required></label>
+      <label>Teléfono<input id="deliveryPhone" type="tel" autocomplete="tel" required></label>
+      <label>Dirección completa<input id="deliveryAddress" autocomplete="street-address" required></label>
+      <label>Colonia / Barrio<input id="deliveryNeighborhood" autocomplete="address-line2"></label>
+      <label>Código postal<input id="deliveryZip" inputmode="numeric" autocomplete="postal-code" required></label>
+      <label>Referencias para encontrar tu domicilio <span>(opcional)</span><textarea id="deliveryReference" rows="2"></textarea></label>
+      <button class="primary full" type="submit">CONTINUAR AL PAGO</button>
+    </form>
+  </div>
+</div><div class="toast" id="toast"></div><script id="oqp-history-fallback">
+window.addEventListener('popstate',function(){
+  try{
+    var a=document.getElementById('merchAudio');
+    var s={from:'merch',skipIntro:true,music:a?{time:a.currentTime||0,playing:!a.paused,volume:a.volume,muted:a.muted}:{}};
+    sessionStorage.setItem('ohqp-route-state',JSON.stringify(s));
+  }catch(e){}
+});
+</script><script src="app.js"></script></body></html>
